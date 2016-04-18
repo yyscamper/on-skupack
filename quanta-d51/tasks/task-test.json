@@ -1,0 +1,10 @@
+{
+    "friendlyName": "Turn on Node Identify LED",
+    "injectableName": "Test.IdentifyOn",
+    "implementsTask": "Task.Base.Obm.Node",
+    "options": {
+        "action": "identifyOn",
+        "obmServiceName": "ipmi-obm-service"
+    },
+    "properties": {}
+}

@@ -1,13 +1,13 @@
 {
-    "name": "Quanta D51",
+    "name": "Rinjin",
     "rules": [
         {
-            "path": "ohai.dmi.system.manufacturer",
-            "contains": "Quanta"
+            "path": "ohai.dmi.base_board.manufacturer",
+            "contains": "Intel"
         },
         {
-            "path": "ohai.dmi.system.product_name",
-            "contains": "D51B-2U"
+            "path": "ohai.dmi.base_board.product_name",
+            "equals": "S2600KP"
         }
     ],
     "skuConfig" : {
@@ -18,14 +18,14 @@
             "name": "Graph.noop-example",
             "options": {
                 "defaults": {
-                    "delay": "1000"
+                    "delay": "2000"
                 }
             }
         },
         "os": {
             "default": {
-                "graphName": "Graph.InstallRhel",
-                "version": "7.0"
+                "graphName": "Graph.InstallCentOS",
+                "version": "6.5"
             }
         }
     }
